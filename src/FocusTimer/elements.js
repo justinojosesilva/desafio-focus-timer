@@ -1,0 +1,7 @@
+export const controls = document.getElementById('controls')
+export const minutes = document.getElementById('minutes')
+export const seconds = document.getElementById('seconds')
+export const buttonFlorest = document.getElementById('florest')
+export const buttonRain = document.getElementById('rain')
+export const buttonCoffee = document.getElementById('coffee')
+export const buttonFire = document.getElementById('fire')

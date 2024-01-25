@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --bg-color: #FFFFFF;
+  --tt-color: #323238;
+  --bg-button: #c4c4c7;
+  --bg-button-selected: #236777;
+}
+
+body, span {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  gap:19.2rem;
+}
+
+#timer span {
+  font-size: 12.6rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+}
+#controls{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+#controls button {
+  border: 0;
+  background-color: transparent;
+  font-size: 4.8rem;
+
+  cursor: pointer;
+}
+
+#musics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem
+}
+
+#musics button {
+  border: 0;
+  border-radius: 3rem;
+
+  background-color: var(--bg-button);
+  font-size: 4.8rem;
+  width: 13.8rem;
+  height: 15.2rem;
+
+  cursor: pointer;
+}
+
+#musics button:hover {
+  background-color: #323238;
+}
+
+#musics button.selected {
+  background-color: var(--bg-button-selected);
+  color: white;
+}

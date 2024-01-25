@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer .v2</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <main class="container-timer">
+      <section id="timer">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+
+      <section id="controls">
+        <button
+          data-action="toggleRunning"
+          class="ph-bold ph-play-circle"
+        >
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button
+          data-action="toggleRunning"
+          class="ph-bold ph-stop-circle"
+        >
+          <span class="sr-only">Parar contador</span>
+        </button>
+        <button
+          data-action="togglePlus"
+          class="ph-bold ph-plus-circle"
+        >
+          <span class="sr-only">Adicinar 5 minutos no contador contador</span>
+        </button>
+        <button
+          data-action="toggleMinus"
+          class="ph-bold ph-minus-circle"
+        >
+          <span class="sr-only">Diminuir 5 minutos no contador contador</span>
+        </button>
+      </section>
+    </main>
+    <aside id="musics">
+      <button
+        id="florest"
+        data-action="playFlorest"
+        class="ph-bold ph-tree"
+      >
+        <span class="sr-only">Aciona o som da floresta</span>
+      </button>
+      <button
+        id="rain"
+        data-action="playRain"
+        class="ph-bold ph-cloud-rain"
+      >
+        <span class="sr-only">Aciona o som da chuva</span>
+      </button>
+      <button
+        id="coffee"
+        data-action="playCoffee"
+        class="ph-bold ph-coffee"
+      >
+        <span class="sr-only">Aciona o som da cafeteria</span>
+      </button>
+      <button
+        id="fire"
+        data-action="playFire"
+        class="ph-bold ph-fire"
+      >
+        <span class="sr-only">Aciona o som do fogo</span>
+      </button>
+    </aside>
+  </div>
+</body>
+</html>
